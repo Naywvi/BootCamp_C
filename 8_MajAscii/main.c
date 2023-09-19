@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 char CapsTiny(char n){
-    if(n >= 'A' && n <= 'Z') {
-        return n + 32;
-    }
-    else if(n >= 'a' && n <= 'z') {
-        return n - 32;
-    }
+    if(n >= 'A' && n <= 'Z') return n + 32;
+    else if(n >= 'a' && n <= 'z') return n - 32;
     else return n;
-    
 }
 
 int main() {
@@ -19,6 +14,5 @@ int main() {
         printf("Result : %c\n", CapsTiny(letter));
     }
     else printf("Caractère non valide\n");
-    
     return 0;
 }
