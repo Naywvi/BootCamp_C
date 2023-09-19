@@ -17,11 +17,6 @@ char *reverse(char s[]){
     return 0;
 }
 
-int check(char s[], char sreverse[]){
-    if(strcmp(s, sreverse) == 0) return 1;
-    else return 0;
-}
-
 int main() {
     int palin = 0;
     char snum[10];
@@ -31,8 +26,8 @@ int main() {
     sprintf(snum, "%d", palin);
     
     char *sreverse = reverse(snum);
-    int a = check(snum, sreverse);
-    if(check(snum, sreverse)) printf("Palindrome");
+    
+    if(strcmp(snum, sreverse) == 0) printf("Palindrome");
     else printf("Not Palindrome");
  
     return 0;
