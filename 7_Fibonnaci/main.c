@@ -8,6 +8,8 @@ int fibonnaci(int n){
 }
 
 int main() {
-    printf("Result : %d", fibonnaci(10));
+    int number = 0;
+    scanf("%d", &number);
+    printf("Result : %d", fibonnaci(number));
     return 0;
 }
