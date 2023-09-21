@@ -8,4 +8,4 @@ Welcome to the C Bootcamp! This bootcamp is a series of exercises designed to he
 
    ```shell
   git clone https://github.com/your-username/golang-bootcamp.git
-<img src="./src/logo.png"/>
+
